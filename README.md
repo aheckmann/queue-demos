@@ -1,5 +1,5 @@
 
-# Queue management <> Product Development
+# Queue management 🤝 Product Development
 
 <img alt="coffee shop" src="./coffee.png" width="300px" />
 
