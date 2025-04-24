@@ -18,7 +18,7 @@ Here's where queue theory provides powerful insights for project management:
 
 1. **Understanding the Relationship between WIP, Cycle Time, and Throughput (Little's Law):** One of the most fundamental principles in queue theory is **Little's Law**. In the context of project management, it can be simplified to:
 
-   $`Average WIP = Average Throughput × Average Cycle Time`$
+   _Average WIP = Average Throughput × Average Cycle Time_
 
    This is huge! It tells you that for a stable system, there's a direct relationship between how much work you have in progress, how fast you're finishing it (throughput), and how long each item takes to get done (cycle time).
 
@@ -136,11 +136,11 @@ Let's talk about server utilization in the context of queue theory and why aimin
 
 First, let's define **Utilization (ρ)**. In queue theory terms, it's the proportion of time a server (or a group of servers) is busy serving customers (processing work items). It's calculated as:
 
-$ρ = Arrival Rate / Service Rate​$
+_ρ = Arrival Rate / Service Rate​_
 
 Or, if you have multiple identical servers (c):
 
-$ρ = Arrival Rate / c × Service Rate per server​$
+_ρ = Arrival Rate / c × Service Rate per server​_
 
 Utilization tells you how busy your team or system is. 100% utilization means your team is theoretically always busy with work.
 
@@ -207,7 +207,7 @@ Determining a software development team's capacity for task assignment isn't an 
 
    - **What it is:** Cycle Time is the total time a work item spends in your system, from when work *starts* on it (or even when it enters the "ready" queue) until it's completed and delivered. It's the "Waiting Time in the System" (W) from Little's Law (L=λW). Analyzing W helps you understand the impact of your WIP (L) and Arrival Rate (λ) on flow.
    - **Why it's important:** While not a direct measure of *rate*, analyzing cycle time distribution gives you crucial insight into the health of your system and helps validate your capacity. Shorter, more consistent cycle times indicate work is flowing smoothly, often a sign that capacity is well-matched to demand and WIP is controlled. Long, highly variable cycle times suggest bottlenecks, excessive WIP, or unpredictable service times – all of which reduce effective capacity even if individual utilization seems high.
-   - **How to use it:** Track the start and end time for each work item. Plot these on a chart (like a Scatterplot or [Cumulative Flow Diagram](https://app.plane.so/plane/pages/01b00522-4e0d-4048-85ce-483bc9552c4d/). The typical range of cycle times tells you how long a task is likely to take to get through the system.
+   - **How to use it:** Track the start and end time for each work item. Plot these on a chart (like a Scatterplot or [Cumulative Flow Diagram](https://en.wikipedia.org/wiki/Cumulative_flow_diagram). The typical range of cycle times tells you how long a task is likely to take to get through the system.
 
 3. **Consider Average Work Item Size/Complexity:**
 
